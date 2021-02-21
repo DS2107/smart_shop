@@ -25,9 +25,20 @@ class MainController extends Controller
         return view('category',compact('category'));
     }
 
-    public function product($product = null)
+    public function busket()
+    {
+        return view('busket');
+    }
+
+    public function busketPlace()
+    {
+        return view('order');
+    }
+    public function product($category, $product = null)
     {
         dump($product);
         return view('product', ['product' => $product]);
     }
+
+
 }
