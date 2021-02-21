@@ -50,9 +50,12 @@
 <div class="container">
     <div class="starter-template">
         <h1>
-            {{$category}}
+            {{$category->name}}
+
         </h1>
+
         <p>
+
             В этом разделе вы найдёте самые популярные мобильные телефонамы по отличным ценам!
         </p>
         <div class="row">
